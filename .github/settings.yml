@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "WireGuard Client - Home Assistant Third Party Add-ons"
+  description: "SadSha VPN Client - Home Assistant Third Party Add-ons"
   homepage: https://addons.community
   topics: wireguard, vpn, networking, addon, addons, home-assistant, homeassistant
   private: false

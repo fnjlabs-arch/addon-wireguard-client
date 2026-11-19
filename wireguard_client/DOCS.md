@@ -1,4 +1,4 @@
-# Home Assistant Community App: WireGuard Client
+# Home Assistant Community App: SadSha VPN Client
 
 [WireGuard®][wireguard] is an extremely simple yet fast and modern VPN that
 utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner,
@@ -16,16 +16,6 @@ WireGuard is currently under heavy development, but already it might be
 regarded as the most secure, easiest to use, and the simplest VPN solution
 in the industry.
 
-## Sponsor
-
-Please, if You want support this kind of projects:
-
-<a href="https://www.buymeacoffee.com/bigmoby" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-Many Thanks,
-
-Fabio Mauro
-
 ## Authors & contributors
 
 Fabio Mauro Bigmoby
@@ -37,13 +27,13 @@ check [the contributor's page][contributors].
 
 ## Installation
 
-WireGuard Client app is pretty simple, however, can be quite complex for user that isn't
+SadSha VPN Client app is pretty simple, however, can be quite complex for user that isn't
 familiar with all terminology used. The app takes care of a lot of things
 for you (if you want).
 
 Follow the following steps for installation & a quick start:
 
-1. Search for the "WireGuard Client" app in the Supervisor app store
+1. Search for the "SadSha VPN Client" app in the Supervisor app store
    and install it.
 1. use the following configuration as example:
 
@@ -185,13 +175,13 @@ INFO: iptables: iptables v1.8.13 (nf_tables)
 
 If the backend is `legacy`, a warning is logged: recent Home Assistant OS kernels may not provide the legacy modules (e.g. `can't initialize iptables table 'nat'`).
 
-## WireGuard Client Unified API
+## SadSha VPN Client Unified API
 
 This app provides a unified API on port 51821 with comprehensive functionality.
 
 > **🔒 Security & API Bind Address (`api_bind`)**: By default, the API binds to `127.0.0.1` (localhost only) for enhanced security. Use `http://127.0.0.1:51821` in your Home Assistant REST sensors and commands. If you set `api_bind: "0.0.0.0"` in your add-on options to allow external/LAN network access, you can also use `http://local-wireguard-client:51821` or your host LAN IP.
 
-> **📚 Complete Documentation**: For comprehensive API documentation, detailed examples, automation templates, and advanced configurations, see **[API.md](https://github.com/bigmoby/addon-wireguard-client/blob/main/wireguard_client/API.md)**.
+> **📚 Complete Documentation**: For comprehensive API documentation, detailed examples, automation templates, and advanced configurations, see **[API.md](https://github.com/fnjlabs-arch/addon-wireguard-client/blob/main/wireguard_client/API.md)**.
 
 ### 📊 Status Endpoint (GET /)
 
@@ -295,4 +285,4 @@ SOFTWARE.
 [bigmoby]: https://github.com/bigmoby
 [wireguard]: https://www.wireguard.com
 [original_project]: https://github.com/hassio-addons/addon-wireguard
-[contributors]: https://github.com/bigmoby/addon-wireguard-client/graphs/contributors
+[contributors]: https://github.com/fnjlabs-arch/addon-wireguard-client/graphs/contributors

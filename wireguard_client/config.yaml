@@ -1,9 +1,9 @@
 ---
-name: WireGuard Client
+name: SadSha VPN Client
 version: 0.4.1
 slug: wireguard_client
 description: Fast, modern, secure Wireguard tunnel (client)
-url: https://github.com/bigmoby/addon-wireguard-client
+url: https://github.com/fnjlabs-arch/addon-wireguard-client
 arch:
   - aarch64
   - amd64
@@ -12,7 +12,7 @@ init: false
 ports:
   51821/tcp: 51821
 ports_description:
-  51821/tcp: WireGuard client unified API (sensors and services)
+  51821/tcp: SadSha VPN Client unified API (sensors and services)
 hassio_api: true
 privileged:
   - NET_ADMIN
@@ -72,4 +72,4 @@ schema:
     handshake_threshold: int?
     max_failures: int?
     revert_interval: int?
-image: "bigmoby/{arch}-addon-wireguard-client"
+image: "fnjlabs-arch/{arch}-addon-wireguard-client"

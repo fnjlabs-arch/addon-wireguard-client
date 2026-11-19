@@ -36,7 +36,7 @@ jobs:
         with:
           architectures: ${{ env.ARCHITECTURES }}
           image-name: ${{ env.IMAGE_NAME }}
-          registry-prefix: docker.io/bigmoby
+          registry-prefix: docker.io/fnjlabs-arch
 
   publish:
     name: Publish ${{ matrix.arch }} image

@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: WireGuard Client - Failover Watchdog Daemon
+# Home Assistant Community Add-on: SadSha VPN Client - Failover Watchdog Daemon
 # ==============================================================================
 set -euo pipefail
 

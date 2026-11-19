@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Third Party Add-on: WireGuard Client - Unified API (socat)
+# Home Assistant Third Party Add-on: SadSha VPN Client - Unified API (socat)
 # s6 service: single 'run' that spawns socat; per-connection handler generated inline.
 # Endpoints:
 #   GET /           -> status JSON (peers, totals, timestamp)

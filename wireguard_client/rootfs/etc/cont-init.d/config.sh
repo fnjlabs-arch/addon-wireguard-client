@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Third Party Add-on: WireGuard Client
+# Home Assistant Third Party Add-on: SadSha VPN Client
 # Creates the interface configuration
 # ==============================================================================
 declare -a list
@@ -99,7 +99,7 @@ fi
 if [[ $(</proc/sys/net/ipv4/ip_forward) -eq 0 ]]; then
     bashio::log.warning
     bashio::log.warning "IP forwarding is disabled on the host system!"
-    bashio::log.warning "You can still use WireGuard Client to access Hass.io,"
+    bashio::log.warning "You can still use SadSha VPN Client to access Hass.io,"
     bashio::log.warning "however, you cannot access your home network or"
     bashio::log.warning "the internet via the VPN tunnel."
     bashio::log.warning

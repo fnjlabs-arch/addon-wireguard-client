@@ -1,4 +1,4 @@
-# WireGuard Client App - Unified API
+# SadSha VPN Client App - Unified API
 
 This app provides a unified API with comprehensive sensor data and service endpoints on a single port (51821).
 

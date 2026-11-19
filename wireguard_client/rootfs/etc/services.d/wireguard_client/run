@@ -1,13 +1,13 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: WireGuard Client
-# Runs WireGuard Client
+# Home Assistant Community Add-on: SadSha VPN Client
+# Runs SadSha VPN Client
 # ==============================================================================
 declare interface
 
 s6-svc -O /run/service/wireguard_client
 
-bashio::log.info "Starting WireGuard Client..."
+bashio::log.info "Starting SadSha VPN Client..."
 
 # Log the iptables backend used by post_up/post_down (expected: nf_tables)
 iptables_version="$(iptables --version 2>/dev/null || echo "not available")"

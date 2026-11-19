@@ -57,7 +57,7 @@ jobs:
         with:
           architectures: ${{ env.ARCHITECTURES }}
           image-name: ${{ env.IMAGE_NAME }}
-          registry-prefix: docker.io/bigmoby
+          registry-prefix: docker.io/fnjlabs-arch
 
   build:
     name: Test build ${{ matrix.arch }}

@@ -1,5 +1,5 @@
 {
-  "name": "WireGuard Client add-on devcontainer",
+  "name": "SadSha VPN Client add-on devcontainer",
   "image": "ghcr.io/home-assistant/devcontainer:5-apps",
   "overrideCommand": false,
   "remoteUser": "vscode",

@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: WireGuard Client
+# Home Assistant Community Add-on: SadSha VPN Client
 # Shows the current WireGuard status:
 #   - info: once, shortly after startup
 #   - debug/trace: periodically
@@ -11,7 +11,7 @@ declare status_interval=30
 sleep "${status_interval}"
 
 if [[ "${__BASHIO_LOG_LEVEL}" -ge "${__BASHIO_LOG_LEVEL_INFO}" ]]; then
-    bashio::log.info "Current WireGuard Client status:"
+    bashio::log.info "Current SadSha VPN Client status:"
     wg show
 fi
 
@@ -21,6 +21,6 @@ fi
 
 while true; do
     sleep "${status_interval}"
-    bashio::log.debug "Current WireGuard Client status:"
+    bashio::log.debug "Current SadSha VPN Client status:"
     wg show
 done

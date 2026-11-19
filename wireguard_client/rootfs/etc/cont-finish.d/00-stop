@@ -1,11 +1,11 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: WireGuard Client
-# Stops WireGuard Client and cleans up interface
+# Home Assistant Community Add-on: SadSha VPN Client
+# Stops SadSha VPN Client and cleans up interface
 # ==============================================================================
 declare interface
 
-bashio::log.info "Stopping WireGuard Client container..."
+bashio::log.info "Stopping SadSha VPN Client container..."
 
 # Get the interface
 interface="wg0"
@@ -43,4 +43,4 @@ fi
 # Clean up any remaining WireGuard processes
 pkill -f "wg-quick" 2>/dev/null || true
 
-bashio::log.info "WireGuard Client stop completed"
+bashio::log.info "SadSha VPN Client stop completed"

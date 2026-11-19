@@ -1,4 +1,4 @@
-# Home Assistant Bigmoby App: WireGuard Client
+# Home Assistant SadSha App: SadSha VPN Client
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -54,7 +54,7 @@ Update migration process from version **_0.0.3-SNAPSHOT_** to version **_0.0.4-S
 iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
 ```
 
-Recent Home Assistant OS kernels no longer provide the legacy iptables modules. `iptables v1.8.7 (legacy)` comes from app version **0.2.2 or older**: update the app. Current versions use the nftables backend and log it at startup (`INFO: iptables: iptables v1.8.13 (nf_tables)`). See [#62](https://github.com/bigmoby/addon-wireguard-client/issues/62).
+Recent Home Assistant OS kernels no longer provide the legacy iptables modules. `iptables v1.8.7 (legacy)` comes from app version **0.2.2 or older**: update the app. Current versions use the nftables backend and log it at startup (`INFO: iptables: iptables v1.8.13 (nf_tables)`). See [#62](https://github.com/fnjlabs-arch/addon-wireguard-client/issues/62).
 
 - **error setting key 'net.ipv4.conf.all.src_valid_mark'**
 
@@ -111,16 +111,6 @@ The [`wireguard-server/`](wireguard-server/README.md) folder contains two local 
 
 Every pull request runs the CI (add-on linter, hadolint, shellcheck, yamllint and a test build for amd64/aarch64). Images are published to Docker Hub with the manual **Publish** workflow.
 
-## Sponsor
-
-Please, if You want support this kind of projects:
-
-<a href="https://www.buymeacoffee.com/bigmoby" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-Many Thanks,
-
-Fabio Mauro
-
 ## Authors & contributors
 
 Fabio Mauro Bigmoby
@@ -157,21 +147,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [original_project]: https://github.com/hassio-addons/addon-wireguard
-[contributors]: https://github.com/bigmoby/addon-wireguard-client/graphs/contributors
+[contributors]: https://github.com/fnjlabs-arch/addon-wireguard-client/graphs/contributors
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/bigmoby/addon-wireguard-client.svg
-[commits]: https://github.com/bigmoby/addon-wireguard-client/commits/main
+[commits-shield]: https://img.shields.io/github/commit-activity/y/fnjlabs-arch/addon-wireguard-client.svg
+[commits]: https://github.com/fnjlabs-arch/addon-wireguard-client/commits/main
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/bigmoby/addon-wireguard-client/blob/main/wireguard_client/DOCS.md
-[issue]: https://img.shields.io/github/issues/bigmoby/addon-wireguard-client.svg
-[license-shield]: https://img.shields.io/github/license/bigmoby/addon-wireguard-client.svg
+[docs]: https://github.com/fnjlabs-arch/addon-wireguard-client/blob/main/wireguard_client/DOCS.md
+[issue]: https://img.shields.io/github/issues/fnjlabs-arch/addon-wireguard-client.svg
+[license-shield]: https://img.shields.io/github/license/fnjlabs-arch/addon-wireguard-client.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/bigmoby/addon-wireguard-client.svg
-[releases]: https://github.com/bigmoby/addon-wireguard-client/releases
+[releases-shield]: https://img.shields.io/github/release/fnjlabs-arch/addon-wireguard-client.svg
+[releases]: https://github.com/fnjlabs-arch/addon-wireguard-client/releases
 [repository]: https://github.com/bigmoby/hassio-repository-addon
 [wireguard]: https://www.wireguard.com
